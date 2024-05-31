@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruits index</title>
+</head>
+<body>
+    <!-- Program to enter the list of fruits in an array and  
+    upon reading a value from a dropdown box . Print the fruit on that index -->
+
+    Select index to display the fruit
+    <select name="sel" id="opt1">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select><br>
+    <button onclick="fun1()">click here</button>
+    <p id="demo1"></p>
+    
+</body>
+<script>
+    function fun1()
+    
+   { let FRUIT=["APPLE","ORANGE","GRAPES","WATERMELON","KIWI"]
+
+    let x=document.getElementById("opt1").value;
+        document.getElementById("demo1").innerHTML=FRUIT[x]
+   }
+</script>
+
+
+</html>
